@@ -10,7 +10,10 @@ const App = () => {
       padding: '2rem'
     }}>
       <h1>RMC X-PERT Client Interface</h1>
-      <p>Connected to Backend: {import.meta.env.VITE_API_URL}</p>
+      <p>Connected to Backend: fetch(`${import.meta.env.VITE_API_URL}/api/superadmin/mentors`)
+        fetch(`${import.meta.env.VITE_API_URL}/api/superadmin/approve/${id}`, { method: "PUT" })
+fetch(`${import.meta.env.VITE_API_URL}/api/superadmin/delete/${id}`, { method: "DELETE" })
+</p>
     </div>
   );
 };
